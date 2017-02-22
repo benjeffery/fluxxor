@@ -3326,23 +3326,22 @@ var StoreWatchMixin = function StoreWatchMixin() {
     }
 
     return {
-
-        _setStateFromFlux: function _setStateFromFlux() {
-            if (this.mounted) {
-                this.setState(this.getStateFromFlux());
-            }
-        },
-
         componentDidMount: function componentDidMount() {
             var _this = this;
 
             var flux = this.props.flux || this.context.flux;
             this.mounted = true;
 
-            storeNames.forEach(function (store) {
-                console.log(store);
+            // No autobinding in ES6 classes
+            this._setStateFromFlux = function () {
+                if (_this.mounted) {
+                    _this.setState(_this.getStateFromFlux());
+                }
+            };
+
+            (0, _forEach2.default)(storeNames, function (store) {
                 flux.store(store).on("change", _this._setStateFromFlux);
-            });
+            }, this);
         },
 
         componentWillUnmount: function componentWillUnmount() {
