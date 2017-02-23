@@ -8,12 +8,15 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "npm run compile && mocha --compilers js:babel-core/register --recursive",
+    "test": "npm run build && mocha --compilers js:babel-core/register --recursive",
     "jshint": "jsxhint lib/ test/",
-    "compile": "./script/build-fluxxor",
+    "build": "./script/build-fluxxor",
     "preview-site": "wintersmith preview -C site",
     "build-site": "wintersmith build -C site"
   },
+  "files": [
+    "build"
+  ],
   "keywords": [
     "react",
     "flux"
