@@ -1,9 +1,9 @@
-import Dispatcher from './lib/dispatcher';
-import createStore from './lib/create_store';
-import Flux from './lib/flux';
-import FluxMixin from './lib/flux_mixin';
-import StoreWatchMixin from './lib/store_watch_mixin';
-import FluxChildMixin from './lib/flux_child_mixin';
+import Dispatcher from './src/dispatcher';
+import createStore from './src/create_store';
+import Flux from './src/flux';
+import FluxMixin from './src/flux_mixin';
+import StoreWatchMixin from './src/store_watch_mixin';
+import FluxChildMixin from './src/flux_child_mixin';
 import version from './version';
 
 

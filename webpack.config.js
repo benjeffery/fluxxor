@@ -6,7 +6,7 @@ module.exports = {
     entry: "./index.js",
 
     output: {
-        path: "./build",
+        path: "./lib",
         filename: "fluxxor.js",
         library: "Fluxxor",
         libraryTarget: "umd"
