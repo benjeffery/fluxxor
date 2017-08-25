@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const FluxChildMixin = function(React) {
     return {
         componentWillMount: function() {
@@ -10,7 +12,7 @@ const FluxChildMixin = function(React) {
         },
 
         contextTypes: {
-            flux: React.PropTypes.object
+            flux: PropTypes.object
         },
 
         getFlux: function() {
