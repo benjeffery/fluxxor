@@ -1,6 +1,6 @@
 import {EventEmitter} from 'eventemitter3';
-import _isFunction from "lodash/isFunction";
-import _isObject from "lodash/isObject";
+import _isFunction from "lodash.isfunction";
+import _isObject from "lodash.isobject";
 
 export default class Store extends EventEmitter {
 

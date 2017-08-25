@@ -1,9 +1,9 @@
 import {EventEmitter} from "eventemitter3";
 import objectPath from "object-path";
-import _each from "lodash/forEach";
-import _reduce from "lodash/reduce";
-import _isFunction from "lodash/isFunction";
-import _isString from "lodash/isString";
+import _each from "lodash.foreach";
+import _reduce from "lodash.reduce";
+import _isFunction from "lodash.isfunction";
+import _isString from "lodash.isstring";
 
 import Dispatcher from './dispatcher';
 

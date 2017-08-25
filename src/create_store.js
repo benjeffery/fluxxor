@@ -1,5 +1,5 @@
-import _each from 'lodash/forEach';
-import _isFunction from 'lodash/isFunction';
+import _each from 'lodash.foreach';
+import _isFunction from 'lodash.isfunction';
 import Store from "./store";
 
 const RESERVED_KEYS = ["flux", "waitFor"];

@@ -1,13 +1,13 @@
-import _clone from "lodash/clone";
-import _mapValues from "lodash/mapValues";
-import _forOwn from "lodash/forOwn";
-import _intersection from "lodash/intersection";
-import _keys from "lodash/keys";
-import _map from "lodash/map";
-import _each from "lodash/forEach";
-import _size from "lodash/size";
-import _findKey from "lodash/findKey";
-import _uniq from "lodash/uniq";
+import _clone from "lodash.clone";
+import _mapValues from "lodash.mapvalues";
+import _forOwn from "lodash.forown";
+import _intersection from "lodash.intersection";
+import _keys from "lodash.keys";
+import _map from "lodash.map";
+import _each from "lodash.foreach";
+import _size from "lodash.size";
+import _findKey from "lodash.findkey";
+import _uniq from "lodash.uniq";
 
 
 export default class Dispatcher {

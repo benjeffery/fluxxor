@@ -1,4 +1,4 @@
-import _each from 'lodash/forEach';
+import _each from 'lodash.foreach';
 
 const StoreWatchMixin = (...storeNames) => {
 
