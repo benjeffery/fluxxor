@@ -6,7 +6,7 @@ module.exports = {
     entry: "./index.js",
 
     output: {
-        path: "./lib",
+        path: path.resolve(__dirname, 'lib'),
         filename: "fluxxor.js",
         library: "Fluxxor",
         libraryTarget: "umd"
@@ -33,5 +33,6 @@ module.exports = {
 
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.optimize.ModuleConcatenationPlugin()
     ]
 };
